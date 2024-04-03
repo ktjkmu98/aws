@@ -6,3 +6,4 @@ systemctl start iptables.service
 systemctl enable iptables.service
 iptables -F
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+service iptables save
